@@ -44,9 +44,7 @@ namespace G26W07WFCardDealer {
                                      ?? Properties.Resources.red_joker;
             }
 
-            // 4. (선택사항) 족보 결과를 Label에 출력
-            // 폼 디자인에 lblResult 이름의 Label이 있다면 아래 주석을 해제하세요.
-            // lblResult.Text = $"족보: {result.HandName}";
+            MessageBox.Show($"이번 손패는 [{result.HandName}] 입니다!", "족보 판별 결과");
         }
     }
 }
